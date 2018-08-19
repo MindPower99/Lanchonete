@@ -9,7 +9,7 @@ public class LanchoneteMelhorada
 		
 		Scanner input = new Scanner(System.in);
 		
-		int pedido;
+		int pedido,refri,quantrefri;
 		double quantidade,valor;
 		
 		System.out.println("=========Lanchonete========");
@@ -29,37 +29,113 @@ public class LanchoneteMelhorada
 			case 1: 
 				System.out.print("Digite a quantidade desejada: ");
 				quantidade = input.nextDouble();
-				valor = quantidade * 7;
-				System.out.print("Preço = R$ "+valor);
+				System.out.println("Acrescentar refrigerante ?");
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				refri = input.nextInt();
+					if (refri == 1) 
+					{
+						System.out.print("Digite a quantidade: ");
+						quantrefri = input.nextInt();
+						valor = (quantidade * 7) + (quantrefri * 4);
+						System.out.print("Preço = R$ "+valor);	
+					}
+					else 
+					{
+						valor = quantidade * 7;
+						System.out.print("Preço = R$ "+valor);
+					}
+				
+				
 				break;
 			
 			case 2: 
 				System.out.print("Digite a quantidade desejada: ");
 				quantidade = input.nextDouble();
-				valor = quantidade * 9;
-				System.out.print("Preço = R$ "+valor);
-				break;
+				System.out.println("Acrescentar refrigerante ?");
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				refri = input.nextInt();
+				if (refri == 1) 
+				{
+					System.out.print("Digite a quantidade: ");
+					quantrefri = input.nextInt();
+					valor = (quantidade * 9) + (quantrefri * 4);
+					System.out.print("Preço = R$ "+valor);	
+				}
+				else 
+				{
+					valor = quantidade * 9;
+					System.out.print("Preço = R$ "+valor);
+				}
+				
+			break;
 				
 			case 3: 
 				System.out.print("Digite a quantidade desejada: ");
 				quantidade = input.nextDouble();
-				valor = quantidade * 12;
-				System.out.print("Preço = R$ "+valor);
-				break;
+				System.out.println("Acrescentar refrigerante ?");
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				refri = input.nextInt();
+				if (refri == 1) 
+				{
+					System.out.print("Digite a quantidade: ");
+					quantrefri = input.nextInt();
+					valor = (quantidade * 12) + (quantrefri * 4);
+					System.out.print("Preço = R$ "+valor);	
+				}
+				else 
+				{
+					valor = quantidade * 12;
+					System.out.print("Preço = R$ "+valor);
+				}
 				
+			break;
+			
 			case 4: 
 				System.out.print("Digite a quantidade desejada: ");
 				quantidade = input.nextDouble();
-				valor = quantidade * 8;
-				System.out.print("Preço = R$ "+valor);
-				break;
+				System.out.println("Acrescentar refrigerante ?");
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				refri = input.nextInt();
+				if (refri == 1) 
+				{
+					System.out.print("Digite a quantidade: ");
+					quantrefri = input.nextInt();
+					valor = (quantidade * 8) + (quantrefri * 4);
+					System.out.print("Preço = R$ "+valor);	
+				}
+				else 
+				{
+					valor = quantidade * 8;
+					System.out.print("Preço = R$ "+valor);
+				}
+				
+			break;
 				
 			case 5: 
 				System.out.print("Digite a quantidade desejada: ");
 				quantidade = input.nextDouble();
-				valor = quantidade * 12;
-				System.out.print("Preço = R$ "+valor);
-				break;
+				System.out.println("Acrescentar refrigerante ?");
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				refri = input.nextInt();
+				if (refri == 1) 
+				{
+					System.out.print("Digite a quantidade: ");
+					quantrefri = input.nextInt();
+					valor = (quantidade * 12) + (quantrefri * 4);
+					System.out.print("Preço = R$ "+valor);	
+				}
+				else 
+				{
+					valor = quantidade * 12;
+					System.out.print("Preço = R$ "+valor);
+				}
+				
+			break;
 				
 			case 6: 
 				System.out.print("Digite a quantidade desejada: ");
